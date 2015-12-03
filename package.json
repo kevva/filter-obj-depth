@@ -1,0 +1,40 @@
+{
+  "name": "filter-obj-depth",
+  "version": "0.0.0",
+  "description": "Filter object keys and values by depth into a new object",
+  "license": "MIT",
+  "repository": "kevva/filter-obj-depth",
+  "author": {
+    "name": "Kevin Martensson",
+    "email": "kevinmartensson@gmail.com",
+    "url": "github.com/kevva"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "depth",
+    "filter",
+    "object"
+  ],
+  "dependencies": {
+    "is-obj": "^1.0.0",
+    "number-is-integer": "^1.0.0",
+    "object-assign": "^4.0.1"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "ignores": [
+      "test.js"
+    ]
+  }
+}
