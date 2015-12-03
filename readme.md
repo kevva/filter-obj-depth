@@ -22,7 +22,7 @@ const obj = {
 			a: 'foo'
 		}
 	}
-}
+};
 
 filterObjDepth(obj, 1);
 //=> {a: {a: 'foo'}}
