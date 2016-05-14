@@ -1,15 +1,13 @@
 'use strict';
-var isObj = require('is-obj');
-var numberIsInteger = require('number-is-integer');
-var objectAssign = require('object-assign');
+const isObj = require('is-obj');
+const numberIsInteger = require('number-is-integer');
+const objectAssign = require('object-assign');
 
-function filter(obj, lvl, cb) {
-	var ret = {};
-	var keys = Object.keys(obj);
+const filter = (obj, lvl, cb) => {
+	const ret = {};
 
-	for (var i = 0; i < keys.length; i++) {
-		var key = keys[i];
-		var val = obj[key];
+	for (const key of Object.keys(obj)) {
+		const val = obj[key];
 
 		if (isObj(val)) {
 			lvl++;
@@ -23,9 +21,6 @@ function filter(obj, lvl, cb) {
 	}
 
 	return ret;
-}
-
-module.exports = function (obj, cb) {
-	var o = objectAssign({}, obj);
-	return filter(o, 0, cb);
 };
+
+module.exports = (obj, cb) => filter(objectAssign({}, obj), 0, cb);
