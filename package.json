@@ -33,9 +33,6 @@
     "xo": "*"
   },
   "xo": {
-    "esnext": true,
-    "ignores": [
-      "test.js"
-    ]
+    "esnext": true
   }
 }

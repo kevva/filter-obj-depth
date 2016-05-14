@@ -27,9 +27,7 @@ const obj = {
 filterObjDepth(obj, 1);
 //=> {a: {a: 'foo'}}
 
-filterObjDepth(obj, (key, val, level, object) => (
-	level <= 1;
-));
+filterObjDepth(obj, (key, val, level, object) => level <= 1);
 //=> {a: {a: 'foo'}}
 ```
 
