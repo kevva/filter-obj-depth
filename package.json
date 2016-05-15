@@ -1,6 +1,6 @@
 {
   "name": "filter-obj-depth",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Filter object keys and values by depth into a new object",
   "license": "MIT",
   "repository": "kevva/filter-obj-depth",
